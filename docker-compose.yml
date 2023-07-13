@@ -2,6 +2,11 @@ services:
   redis:
     image: redis:7.0.0
     container_name: redis
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "2048k"
+        max-file: 10
     ports:
       - "6379:6379"
     volumes:
