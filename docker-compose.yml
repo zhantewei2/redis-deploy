@@ -1,6 +1,6 @@
 services:
   redis:
-    image: redis:7.0.0
+    image: registry.cn-hangzhou.aliyuncs.com/voyo/linux_amd64_redis:7.4.1-alpine3.20
     container_name: redis
     logging:
       driver: "json-file"
